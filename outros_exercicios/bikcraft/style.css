@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:  #f7f7f7;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#logo{
+    display: block;
+    margin: 60px auto;
+}
+
+#nav_container{
+    display: flex;
+    justify-content: center;
+}
+
+.navegador{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px 25px;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+#conteudo_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: white;
+    margin-top: 60px;
+}
+
+#NSdescription > h2{
+    text-align: left;
+}
+
+#NSdescription > p{
+    text-align: left;
+}
+
+#NSdescription > a{
+    text-decoration: none;
+    background-color: red;
+    padding: 15px 25px;
+    color: white;
+    display: inline-block;
+    justify-content: left;
+    border-radius: 5px;
+}
+
+#bicicleta{
+    max-width: 100%;
+}
