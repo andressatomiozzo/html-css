@@ -38,10 +38,20 @@ body {
 #NSdescription {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 20px;
   align-items: flex-end;
-  padding: 70px 40px;
+  padding: 80px 40px;
   background-color: white;
+  position: relative;
+}
+
+#retangulo{
+  width: 60px;
+  height: 4px;
+  background-color: red;
+  position: absolute;
+  right: -30px;
+  top: 30px;
 }
 
 #NSdescription > h2 {
