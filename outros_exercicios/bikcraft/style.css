@@ -4,6 +4,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+ul{
+  list-style: none;
+}
+
 body {
   background-color: #f7f7f7;
 }
@@ -14,7 +18,10 @@ body {
 }
 
 #nav_container {
-  display: flex;
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 40px;
   justify-content: center;
 }
 
@@ -23,9 +30,15 @@ body {
   color: black;
   background-color: white;
   padding: 15px 25px;
-  margin: 0 20px;
   border-radius: 5px;
+  display: block;
 }
+
+.navegador:hover{
+  border: 2px solid red;
+}
+
+
 
 #conteudo_container {
   display: grid;
@@ -45,22 +58,26 @@ body {
   position: relative;
 }
 
-#retangulo{
+#NSdescription::before {
+  content: "";
+  display: inline-block;
   width: 60px;
   height: 4px;
   background-color: red;
   position: absolute;
-  right: -30px;
   top: 30px;
+  right: -30px;
 }
 
+
+
 #NSdescription > h2 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 #NSdescription > p {
   text-align: right;
-  font-size: 21px;
+  font-size: 1.3rem;
 }
 
 #NSdescription > a {
@@ -73,13 +90,18 @@ body {
   text-align: center;
 }
 
+#NSdescription > a:hover {
+  background-color: #900;
+}
+
 #bicicleta {
   max-width: 100%;
 }
 
 #subtitulo_vantagens {
-  font-size: 64px;
+  font-size: 4rem;
   background-color: #f7f7f7;
+  background-image: url(./img/onda.svg);
   color: #c6c6c6;
   text-align: right;
   padding: 40px;
@@ -91,6 +113,10 @@ body {
   background-color: white;
 }
 
+.vantagens-items:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
 .vantagens-items {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -98,14 +124,18 @@ body {
   padding: 20px;
 }
 
+.vantagens-items:hover {
+  border-left: 4px solid red;
+}
+
 .vantagens-items > p {
   grid-area: 2/2;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 footer{
     text-align: center;
     background-color: white;
     padding: 40px;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
