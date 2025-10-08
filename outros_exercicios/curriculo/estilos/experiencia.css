@@ -14,14 +14,14 @@
   position: relative;
 }
 
-.empresa::before{
-    content: '';
-    width: 4px;
-    height: 20px;
-    background-image: linear-gradient(#FF0033, #561515);
-    position: absolute;
-    top: 20px;
-    left: -4px;
+.empresa::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background-image: linear-gradient(#ff0033, #561515);
+  position: absolute;
+  top: 20px;
+  left: -4px;
 }
 
 .empresa-ano {
