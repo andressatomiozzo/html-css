@@ -67,29 +67,27 @@
   position: relative;
 }
 
-.formacao-titulo-extra {
-  font-size: 0.8rem;
+.formacao-extra-titulo {
+  font-size: 0.73rem;
   text-transform: uppercase;
   color: #8f8f8f;
-  margin-top: 70px;
-  letter-spacing: 0.5ch;
+  margin-top: 69px;
+  margin-left: 30px;
 }
 
-
-.formacao-titulo-extra::before {
+.formacao-extra-titulo::before {
+  display: block;
   content: "";
   width: 24px;
   height: 24px;
   position: absolute;
-  left: -30px;
-  top: 68px;
-  background-color: red;
+  left: 0px;
+  top: 65px;
 }
 
-.cursos-titulo::before{
+.cursos-titulo::before {
   background: url("../img/curso.svg");
 }
-
 
 .cursos-content {
   display: flex;
@@ -113,4 +111,88 @@
 
 .cursos-especificacoes {
   display: none;
+}
+
+.idiomas {
+  position: relative;
+}
+
+.idiomas h3::before {
+  background: url("../img/idiomas.svg");
+}
+
+.idiomas p {
+  margin: 20px 30px;
+  padding-left: 20px;
+}
+
+.idiomas strong {
+  color: white;
+}
+
+@media (max-width: 1125px) {
+  .formacao-div {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .formacao-texto {
+    margin: 0 auto 30px auto;
+  }
+
+  .formacao-lista-container {
+    gap: 20px;
+  }
+
+  .formacao-lista-content {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 675px) {
+  .formacao-texto {
+    font-size: 1.1rem;
+  }
+
+  .formacao-lista-content {
+    padding: 15px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .formacao-lista-content span {
+    font-size: 0.7rem;
+  }
+
+  .formacao-lista-content h3 {
+    font-size: 1rem;
+  }
+
+  .cursos-curso {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .formacao-lista-container {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao-lista-content {
+    margin: 0 auto 0 30px;
+  }
+
+  .formacao-lista-container .diferente1 {
+    margin: -80px 30px 0 auto;
+  }
+
+  .formacao-lista-container .diferente2 {
+    margin: -80px auto 0 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .formacao-lista-content, .formacao-lista-container .diferente1, .formacao-lista-container .diferente2{
+    margin: 0 auto;
+  }
 }
