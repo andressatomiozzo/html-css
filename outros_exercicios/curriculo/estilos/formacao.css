@@ -67,25 +67,7 @@
   position: relative;
 }
 
-.formacao-extra-titulo {
-  font-size: 0.73rem;
-  text-transform: uppercase;
-  color: #8f8f8f;
-  margin-top: 69px;
-  margin-left: 30px;
-}
-
-.formacao-extra-titulo::before {
-  display: block;
-  content: "";
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  left: 0px;
-  top: 65px;
-}
-
-.cursos-titulo::before {
+.cursos-container h3::before {
   background: url("../img/curso.svg");
 }
 

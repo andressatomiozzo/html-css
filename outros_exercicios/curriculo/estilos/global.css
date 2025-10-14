@@ -45,6 +45,24 @@ a {
   word-break: break-all;
 }
 
+.h3-pequeno {
+  font-size: 0.73rem;
+  text-transform: uppercase;
+  color: #8f8f8f;
+  margin-top: 69px;
+  margin-left: 30px;
+}
+
+.h3-pequeno::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 65px;
+}
+
 @media (max-width: 1125px) {
   .secao {
     max-width: 800px;

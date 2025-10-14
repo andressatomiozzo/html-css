@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carrossel BikeCraft</title>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<style>
+  body {
+    background: #f3f3f3;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .swiper {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .slide-img {
+    width: 80%;
+    border-radius: 20px;
+  }
+
+  .slide-title {
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff0000, #ff6a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Bolinhas de navegação */
+  .swiper-pagination-bullet {
+    background: #999;
+    opacity: 0.5;
+  }
+  .swiper-pagination-bullet-active {
+    background: #ff0000;
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<!-- Estrutura Swiper -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/bike-1850662_1280.jpg" class="slide-img">
+      <h1 class="slide-title">BikeCraft</h1>
+    </div>
+    <div class="swiper-slide">
+      <img src="https://cdn.pixabay.com/photo/2019/03/14/22/14/bicycle-4053032_1280.jpg" class="slide-img">
+      <h1 class="slide-title">RoadPro</h1>
+    </div>
+    <div class="swiper-slide">
+      <img src="https://cdn.pixabay.com/photo/2017/04/07/01/41/bicycle-2200198_1280.jpg" class="slide-img">
+      <h1 class="slide-title">SpeedMax</h1>
+    </div>
+  </div>
+
+  <!-- Paginação -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- Script Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    effect: 'slide',
+  });
+</script>
+
+</body>
+</html>
